@@ -1,3 +1,3 @@
 # yagueexperience
 
-Url Pagina web https://juanvelasquezu.github.io/yagueexperience/ en construccion
+Url Pagina web  con animaciones https://juanvelasquezu.github.io/yagueexperience/ (en desarrollo)
