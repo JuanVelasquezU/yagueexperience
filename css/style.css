@@ -1,0 +1,412 @@
+*{margin: 0;
+padding:0;
+}
+
+h1{
+    color: #BEEC3D; 
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 40px
+    
+}
+
+h2{
+    color: #BEEC3D; 
+    text-align: center;   
+    font-family: 'Shadows Into Light', cursive; 
+    font-size: 30px;
+}
+h3{
+    color: #BEEC3D; 
+    font-size: 25px;
+    text-align: center;   
+}
+
+h4{
+    color: white;
+}
+.clasea{
+    font-family: 'Architects Daughter', cursive;
+}
+
+/*body*/
+
+
+
+body{
+    display: grid;
+    height: auto;
+       /** posicionar areas**/
+    grid-template-areas: 
+    "header"
+    "bloqueuno"
+    "bloquedos"
+    "bloquetres"
+    "footer"
+    ;
+
+}
+/** posicionar areas**/
+
+
+
+
+/** areas**/
+
+header{
+    grid-area: header;
+    background-color: rgb(95, 95, 112);
+}
+.bloqueuno{
+    grid-area: bloqueuno;
+    
+}
+.bloquedos{
+    grid-area: bloquedos;
+    background-image: url(../img/fondo3.jpg);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+     
+    }
+
+.bloquetres{
+    grid-area: bloquetres;
+    background-image: url(../img/fondo5.jpg);
+    height: 800px;
+    
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(95, 95, 112);
+}
+
+/**header**/ 
+
+.cabeza{
+    display: grid;
+    height: auto;
+    background-color: #6C6868;
+    align-items: center;
+}
+.cabeza__bloque{
+     display: grid;
+     justify-content: center;
+    }
+.logo{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.form__boton{
+    background-color: #BEEC3D;
+    color: white;
+    margin-left: 20px;
+    width: 280px;
+    height: 45px;
+    font-size: 20px;    
+    }
+.cabeza__nav a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+ }
+ .cabeza__nav a:hover{
+     border: 1px solid #BEEC3D;
+ }
+
+
+ /**main**/
+ .bloqueuno__h1{
+     padding-bottom: 60px;
+ }
+
+ .form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .bloqueuno{
+    background-image: url(../img/fondo2.jpg);
+    height: 300px;
+ }
+ 
+
+.form__boton{
+    background-color: #BEEC3D;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 280px;
+    height: 45px;
+    font-size: 20px;    
+    }
+
+.form__input{
+
+        background-color:ghostwhite ;
+        margin-top:30px;
+        text-align: center;
+        width: 280px;
+        height: 45px; 
+        margin-left:20px;      
+    }
+
+    /*bloque dos main*/
+
+
+.bloquedos__cajita1{
+        background-image: url(../img/calavera.png);
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+        }
+        
+.bloquedos__cajita3{
+    background-image: url(../img/gasco2.png);
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    }
+
+.cajas{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+    /*bloque tres*/
+
+.cajita4{
+    border-radius: 50%;
+}
+.cajita5{
+    border-radius: 50%  ;
+}
+
+.cajita6{
+    border-radius: 50%;
+  
+}
+
+/**footer**/
+
+.pie{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.logofooter{
+    width: 180px;
+    height: 150px;
+}
+
+/**pagina experiencia**/
+
+.contenidoexperiencia{
+    height: 800px;
+}
+
+.cajita7{
+    background-image: url(../img/gatito.png);
+    height: 180px;
+    width: 180px;
+    margin: 18px;
+    }
+
+.cajita8{
+    background-image: url(../img/psico.png);
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    }
+
+/*elproyecto*/
+
+.contenido_principaldos{
+    background-image: url(../img/fondo9.jpg);
+    height: 1600px;
+}
+
+.proyectoexperiencias{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p{
+    color: white;
+}
+
+/*seccion equipo*/
+
+.contenidoequipo{
+    background-image: url(../img/fondo4.jpg);
+    height: 790px;
+}
+
+.caja11{
+    border-radius: 50%;
+}
+
+/*seccion contacto*/
+
+.formulario{
+    background-image: url(../img/fondo6.jpg);
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+.formulario__apariencia{
+width: 350px;
+margin: 0 auto;
+background-color: thistle;
+padding: 15px;
+color: white;
+font-size: 25px;
+border-radius: 5px;
+text-align: center;
+}
+
+.formulario__datos{
+border:solid 1px rgb(105, 16, 16);
+padding: 10px;
+margin: 3px;
+width: 320px;
+}
+
+.mensaje{
+height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) {
+
+        .bloqueuno__h1{
+            font-size: 100px;
+        }
+        
+        .bloquedos{ 
+            height: 680px;}
+        .bloquedos__cajita1{
+                background-image: url(../img/gasco2.png);
+                background-repeat: no-repeat;
+                height: 300px;
+                width: 300px;
+                margin: 40px;
+                }
+                
+        .bloquedos__cajita3{
+                    background-image: url(../img/calaveron.png);
+                    background-repeat: no-repeat;
+                    height: 400px;
+                    width: 400px;
+                    margin: 40px;
+                
+                }
+        .cajas{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .cajita7{
+            background-image: url(../img/gatito.png);
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            }
+        
+        .cajita8{
+            background-image: url(../img/psico.png);
+            height: 400px;
+            width: 400px;
+            margin: 20px;
+            }
+        .contenidoexperiencia{
+            height: 680px;
+        }
+        .pie{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+           align-items: center;
+        }
+        .proyectoexperiencias{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            margin-top: 120px;
+        }
+        .contenido_principaldos{
+            background-image: url(../img/fondo9.jpg);
+            height: 680px;
+        }
+}
+
+
+
+@media (min-width: 480px) {
+    .cabeza__bloque{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+    }
+    
+    
+    .cabeza__listas{
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+    }
+    .cabeza__nav a{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 22px;
+        color: aliceblue;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-bottom: 10px;
+     }
+    
+}
+@media (min-width: 480px) {
+    .bloqueuno{ 
+        height: 550px;
+    }
+    .form{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .titulo {
+        font-size: 60px;
+    }
+    .titulotres{
+        font-size: 60px;
+    }
+}
+
