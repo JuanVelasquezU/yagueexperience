@@ -1,3 +1,3 @@
 # yagueexperience
 
-Entrega responsive
+Url Pagina web https://juanvelasquezu.github.io/yagueexperience/ en construccion
