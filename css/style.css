@@ -64,7 +64,7 @@
     .bloquedos{
         grid-area: bloquedos;
         background-image: url(../img/terror4.jpg);
-        height: 800px;
+        height: 400px;
         display: flex;
         flex-direction: column;
          
@@ -74,7 +74,7 @@
         grid-area: bloquetres;
         background-image: url(../img/8.jpg);
         background-size: cover;
-        height: 800px;
+        height: 1050px;
         
     
     }
@@ -83,7 +83,57 @@
         height: auto;
 
     }
-
+    .chicaaudifonos{
+        animation-name: chicaaudifonos;
+        animation-duration: 25s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes chicaaudifonos{
+        0%, 100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+        
+          10%, 30%, 50%, 70%, 90% {
+            -webkit-transform: translateX(-40px);
+            transform: translateX(-40px);
+          }
+        
+          20%, 40%, 60%, 80% {
+            -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+          }
+    
+    }
+    .hombreasustado{
+        animation-name: hombreasustado;
+        animation-duration: 6s;
+        animation-delay: 0s;
+       }
+    @keyframes hombreasustado{
+        0% {
+            opacity: 0;
+            -webkit-transform: translateX(-800px);
+            transform: translateX(-800px);
+          }
+        
+          60% {
+            opacity: 1;
+            -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+          }
+        
+          80% {
+            -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+          }
+        
+          100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+    }
     .pie__datos{
         color: #BEEC3D;
     }
@@ -367,7 +417,6 @@
     
     .formulario__datos{
     border:solid 1px rgb(105, 16, 16);
-    padding: 10px;
     margin: 3px;
     width: 320px;
     }
@@ -420,6 +469,10 @@
                 height: 680px;
                 
             }
+            .bloquetres{
+
+                height: 600px;}
+              
             .bloquedos__cajita1{
                     height: 380px;
                     width: 500px;
