@@ -1,3 +1,3 @@
 # yagueexperience
 
-Entrega responsive
+Url Pagina web  con animaciones https://juanvelasquezu.github.io/yagueexperience/ (en desarrollo)
