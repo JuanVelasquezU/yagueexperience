@@ -1,0 +1,232 @@
+@import "tipografia";
+
+//header//
+
+.cabeza{
+    display: grid;
+    height: auto;
+    background-image: url(../img/psicoo.jpg);
+    align-items: center;
+    
+    .cabeza__bloque{
+        display: grid;
+        justify-content: center;
+       }
+      
+         .centrarlogo{
+        text-align: center;
+          }
+
+            .logo{
+            height: 110px;  
+            width: 110px;  
+            padding-top: 10px;
+            animation-name: animacionlogo;
+            animation-duration: 320s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+    
+            @keyframes animacionlogo{
+            20% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+            
+            40% {
+                -webkit-transform: rotate(-359deg);
+                transform: rotate(-359deg);
+            }
+            
+            60% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+            
+            80% {
+                -webkit-transform: rotate(-359deg);
+                transform: rotate(-359deg);
+            }
+            
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+            }
+    }
+        .form__boton{
+            background-color: #BEEC3D;
+            color: white;
+            margin-left: 20px;
+            width: 280px;
+            height: 45px;
+            font-size: 20px;  
+            margin-top: 20px;  
+        }
+        .cabeza__clasea{        
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(233, 235, 236);
+            font-weight: bold;
+            font-family: $tipografia;
+        }
+            li{
+                list-style:none;
+            }
+        
+            @media (min-width: 480px) {
+                .cabeza{
+                display: flex;
+                    }
+
+                .cabeza__bloque{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                  }
+               .logo{
+                   height: 110px;  
+                   width: 110px;  
+                   padding-top: 10px;
+                   animation-name: animacionlogo;
+                   animation-duration: 320s;
+                   animation-delay: 0s;
+                   animation-iteration-count: infinite;
+               }
+               @keyframes animacionlogo{
+                   20% {
+                       -webkit-transform: rotate(359deg);
+                       transform: rotate(359deg);
+                     }
+                   
+                     40% {
+                       -webkit-transform: rotate(-359deg);
+                       transform: rotate(-359deg);
+                     }
+                   
+                     60% {
+                       -webkit-transform: rotate(359deg);
+                       transform: rotate(359deg);
+                     }
+                   
+                     80% {
+                       -webkit-transform: rotate(-359deg);
+                       transform: rotate(-359deg);
+                     }
+                   
+                     100% {
+                       -webkit-transform: rotate(359deg);
+                       transform: rotate(359deg);
+                     }
+                   }
+               .form__boton{
+                   background-color: #BEEC3D;
+                   color: white;
+                   margin-left: 20px;
+                   width: 280px;
+                   height: 45px;
+                   font-size: 20px;    
+                   margin-top: 40px;
+                   }
+
+                .cabeza__listas{
+                    display: flex;
+                    text-decoration: none;
+                    list-style: none;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .cabeza__clasea{
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    font-size: 22px;
+                    color: aliceblue;
+                    font-weight: bold;
+                    margin-left: 20px;
+                    margin-bottom: 10px;
+                    
+                }
+
+            }
+        }
+    
+//main//
+
+
+
+.seccionlogin{
+    background-image: url(../img/fondo12.jpg);
+    background-repeat: no-repeat;
+
+
+
+            @media (min-width: 480px) {
+                height: 500px;
+
+                .seccion__panel{
+                    align-items: center;
+                    padding-top: 100px;                  
+                }
+            }
+
+        .seccion__titulo{
+                text-align: center;
+            }
+        .form-group{
+            text-align: center;
+            
+        }
+        .seccion__registro{
+            text-align: center;
+
+        }   
+            .textoregistro{
+                color: yellowgreen;
+                &:hover{
+                    color: white;
+                }
+            }
+
+    
+.textoregistro{
+      color: yellowgreen;
+                &:hover{
+                    color: white;
+                }
+}}
+
+
+//footer//
+
+.pie{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   background-image: url(../img/psicoo.jpg);
+
+   @media (min-width: 480px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+    .pie__datos{
+        color: #BEEC3D;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+        }
