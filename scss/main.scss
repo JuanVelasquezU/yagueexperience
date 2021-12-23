@@ -1,162 +1,706 @@
+$primario: #BEEC3D;
+
 @import "tipografia";
 
-//header//
+@mixin boxproyecto {
+    width: 350px;
+    height: 300px;
+    border: solid 5px #BEEC3D;
+    border-radius: 10px;
+    margin: 10px;
+}
 
-.cabeza{
+//titulos//@at-root
+
+h1{
+    color: $primario; 
+}
+
+h2{
+    color: $primario;
+    }
+h3{
+    color: $primario;
+}
+
+h4{
+    color:$primario
+}
+
+//maps//
+
+$titulos: (
+ h1: 100px,
+ h2: 60px,
+ h3: 40px,
+ h4: 30px,
+);
+
+$h1: map-get($titulos, h1);
+
+$h2: map-get($titulos, h2);
+
+$h3: map-get($titulos, h3);
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #BEEC3D;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 40px;
+  }
+  
+  h2 {
+    color: #BEEC3D;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+  }
+  
+  h3 {
+    color: #BEEC3D;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  h4 {
+    color: white;
+  }
+  
+  .clasea {
+    font-family: 'Architects Daughter', cursive;
+  }
+  
+  /*body*/
+  
+  body {
+    display: grid;
+    height: auto;
+  
+    /** posicionar areas**/
+    grid-template-areas: "header" "bloqueuno" "bloquedos" "bloquetres" "footer";
+  }
+  
+  /** posicionar areas**/
+  
+  /** areas**/
+  
+  header {
+    grid-area: header;
+    background-color: rgb(95, 95, 112);
+  }
+  
+  .bloqueuno {
+    grid-area: bloqueuno;
+  }
+  
+  .bloquedos {
+    grid-area: bloquedos;
+    background-image: url(../img/terror4.jpg);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bloquetres {
+    grid-area: bloquetres;
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    height: 1050px;
+  }
+  
+  .bloqueseis {
+    background-image: url(../img/fondoteam.jpg);
+    height: auto;
+  }
+  
+  .chicaaudifonos {
+    animation-name: chicaaudifonos;
+    animation-duration: 25s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes chicaaudifonos {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: translateX(-40px);
+      transform: translateX(-40px);
+    }
+  
+    20%, 40%, 60%, 80% {
+      -webkit-transform: translateX(40px);
+      transform: translateX(40px);
+    }
+  }
+  
+  .hombreasustado {
+    animation-name: hombreasustado;
+    animation-duration: 6s;
+    animation-delay: 0s;
+  }
+  
+  @keyframes hombreasustado {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-800px);
+      transform: translateX(-800px);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translateX(30px);
+      transform: translateX(30px);
+    }
+  
+    80% {
+      -webkit-transform: translateX(-10px);
+      transform: translateX(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .pie__datos {
+    color: #BEEC3D;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: rgb(95, 95, 112);
+  }
+  
+  /**header**/
+  
+  .cabeza {
     display: grid;
     height: auto;
     background-image: url(../img/psicoo.jpg);
     align-items: center;
-    
-    .cabeza__bloque{
-        display: grid;
-        justify-content: center;
-       }
-      
-         .centrarlogo{
-        text-align: center;
-          }
-
-            .logo{
-            height: 110px;  
-            width: 110px;  
-            padding-top: 10px;
-            animation-name: animacionlogo;
-            animation-duration: 320s;
-            animation-delay: 0s;
-            animation-iteration-count: infinite;
-    
-            @keyframes animacionlogo{
-            20% {
-                -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
-            }
-            
-            40% {
-                -webkit-transform: rotate(-359deg);
-                transform: rotate(-359deg);
-            }
-            
-            60% {
-                -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
-            }
-            
-            80% {
-                -webkit-transform: rotate(-359deg);
-                transform: rotate(-359deg);
-            }
-            
-            100% {
-                -webkit-transform: rotate(359deg);
-                transform: rotate(359deg);
-            }
-            }
+  }
+  
+  .cabeza__bloque {
+    display: grid;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 110px;
+    width: 110px;
+    padding-top: 10px;
+    animation-name: animacionlogo;
+    animation-duration: 320s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animacionlogo {
+    20% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
     }
-        .form__boton{
-            background-color: #BEEC3D;
-            color: white;
-            margin-left: 20px;
-            width: 280px;
-            height: 45px;
-            font-size: 20px;  
-            margin-top: 20px;  
-        }
-        .cabeza__clasea{        
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            font-size: 18px;
-            color: rgb(233, 235, 236);
-            font-weight: bold;
-            font-family: $tipografia;
-        }
-            li{
-                list-style:none;
-            }
-        
-            @media (min-width: 480px) {
-                .cabeza{
-                display: flex;
-                    }
+  
+    40% {
+      -webkit-transform: rotate(-359deg);
+      transform: rotate(-359deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate(-359deg);
+      transform: rotate(-359deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg);
+    }
+  }
+  
+  .form__boton {
+    background-color: #BEEC3D;
+    color: white;
+    margin-left: 20px;
+    width: 280px;
+    height: 45px;
+    font-size: 20px;
+  }
+  
+  .cabeza__nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+  
+    &:hover {
+      border: 1px solid #BEEC3D;
+    }
+  }
+  
+  .centrarlogo {
+    text-align: center;
+  }
+  
+  /**main**/
+  
+  .seccionproyecto {
+    background-image: url(../img/fondoproyecto.jpg);
+  }
+  
+  .bloquecinco {
+    background-image: url(../img/fondoterror.jpg);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .bloqueuno__h1 {
+    padding-bottom: 60px;
+  }
+  
+  .transicion {
+    margin-top: 69px;
+    animation-name: animacionmujer;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes animacionmujer {
+    0%, 100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  
+    10%, 30%, 50%, 70%, 90% {
+      -webkit-transform: translateX(-1px);
+      transform: translateX(-1px);
+    }
+  
+    20%, 40%, 60%, 80% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+  }
+  
+  .transicion2 {
+    height: 0px;
+    width: 0px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .bloqueuno {
+    background-image: url(../img/terror3.png);
+    height: 580px;
+    background-position: center center;
+  }
+  
+  .form__boton {
+    background-color: #BEEC3D;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 280px;
+    height: 45px;
+    font-size: 20px;
+  }
+  
+  .form__input {
+    background-color: ghostwhite;
+    margin-top: 30px;
+    text-align: center;
+    width: 280px;
+    height: 45px;
+    margin-left: 20px;
+  }
+  
+  /*bloque dos main*/
+  
+  .videoyoutube {
+    height: 200px;
+    width: 360px;
+  }
+  
+  .bloquedos__cajita1 {
+    height: 400px;
+    width: 360px;
+  }
+  
+  .bloquedos__cajita3 {
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+  }
+  
+  .cajas {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /*bloque tres*/
+  
+  .cajita4, .cajita5, .cajita6 {
+    border-radius: 50%;
+  }
+  
+  /**footer**/
+  
+  .pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/psicoo.jpg);
+  }
+  
+  .logofooter {
+    width: 180px;
+    height: 150px;
+  }
+  
+  /**pagina experiencia**/
+  
+  .contenidoexperiencia {
+    height: 800px;
+  }
+  
+  .cajita7 {
+    background-image: url(../img/gatito.png);
+    height: 180px;
+    width: 180px;
+    margin: 18px;
+  }
+  
+  .cajita8 {
+    background-image: url(../img/psico.png);
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+  }
+  
+  /*elproyecto*/
 
-                .cabeza__bloque{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                  }
-               .logo{
-                   height: 110px;  
-                   width: 110px;  
-                   padding-top: 10px;
-                   animation-name: animacionlogo;
-                   animation-duration: 320s;
-                   animation-delay: 0s;
-                   animation-iteration-count: infinite;
-               }
-               @keyframes animacionlogo{
-                   20% {
-                       -webkit-transform: rotate(359deg);
-                       transform: rotate(359deg);
-                     }
-                   
-                     40% {
-                       -webkit-transform: rotate(-359deg);
-                       transform: rotate(-359deg);
-                     }
-                   
-                     60% {
-                       -webkit-transform: rotate(359deg);
-                       transform: rotate(359deg);
-                     }
-                   
-                     80% {
-                       -webkit-transform: rotate(-359deg);
-                       transform: rotate(-359deg);
-                     }
-                   
-                     100% {
-                       -webkit-transform: rotate(359deg);
-                       transform: rotate(359deg);
-                     }
-                   }
-               .form__boton{
-                   background-color: #BEEC3D;
-                   color: white;
-                   margin-left: 20px;
-                   width: 280px;
-                   height: 45px;
-                   font-size: 20px;    
-                   margin-top: 40px;
-                   }
-
-                .cabeza__listas{
-                    display: flex;
-                    text-decoration: none;
-                    list-style: none;
-                    justify-content: center;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .cabeza__clasea{
-                    display: flex;
-                    justify-content: center;
-                    text-decoration: none;
-                    font-size: 22px;
-                    color: aliceblue;
-                    font-weight: bold;
-                    margin-left: 20px;
-                    margin-bottom: 10px;
-                    
-                }
-
-            }
-        }
+ 
+  .contenido_principaldos {
+    background-image: url(../img/fondo9.jpg);
+    height: 1600px;
+  }
+  
+  .proyectoexperiencias {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  p {
+    color: white;
+  }
+  
+  /*seccion equipo*/
+  
+  .contenidoequipo {
+    background-image: url(../img/fondo4.jpg);
+    height: 790px;
+  }
+  
+  .caja11 {
+    border-radius: 50%;
+  }
+  
+  /*seccion contacto*/
+  
+  .formulario {
+    background-image: url(../img/fondo6.jpg);
+    padding-bottom: 90px;
+    padding-top: 90px;
+  }
+  
+  .formulario__apariencia {
+    width: 350px;
+    margin: 0 auto;
+    background-color: thistle;
+    padding: 15px;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .formulario__datos {
+    border: solid 1px rgb(105, 16, 16);
+    margin: 3px;
+    width: 320px;
+  }
+  
+  .mensaje {
+    height: 100px;
+  }
+  
+  .form2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  
+  @media (min-width: 480px) {
+    .seccionelproyecto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    }
+    .titulito{
+        font-size: $h1;
+    };
     
-//main//
+
+    //para extend//
+    .icono1{
+        margin-left: auto; 
+        margin-right: auto; 
+        display: block; 
+    }
+    .icono2{
+        @extend .icono1;
+    }
+    .icono3{
+        @extend .icono1;
+    }
+    .box1{
+        @include boxproyecto()
+
+    }
+    .box2{
+        @include boxproyecto()
+    }
+    .box3{
+        @include boxproyecto()
+    }
+
+    .imagenhombre {
+      padding-top: 90px;
+      padding-left: 100px;
+    }
+  
+    .centrarlogo {
+      text-align: inherit;
+      padding-left: 60px;
+    }
+  
+    .form2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .bloqueuno__h1 {
+      padding-bottom: 0px;
+      font-size: 100px;
+    }
+  
+    .bloquedos {
+      height: 680px;
+    }
+  
+    .bloquetres {
+      height: 600px;
+    }
+  
+    .bloquedos__cajita1 {
+      height: 380px;
+      width: 500px;
+    }
+  
+    .bloquedos__cajita3 {
+      height: 400px;
+      width: 380px;
+    }
+  
+    .videoyoutube {
+      height: 490px;
+      width: 911px;
+      margin-left: 200px;
+    }
+  
+    .cajas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 600px;
+    }
+  
+    .cajita7 {
+      background-image: url(../img/gatito.png);
+      height: 300px;
+      width: 300px;
+      margin: 20px;
+    }
+  
+    .cajita8 {
+      background-image: url(../img/psico.png);
+      height: 400px;
+      width: 400px;
+      margin: 20px;
+    }
+  
+    .contenidoexperiencia {
+      height: 680px;
+    }
+  
+    .pie {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .proyectoexperiencias {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      margin-top: 120px;
+    }
+  
+    .contenido_principaldos {
+      background-image: url(../img/fondo9.jpg);
+      height: 680px;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .cabeza__bloque {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      align-items: center;
+    }
+  
+    .cabeza__listas {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .cabeza__nav a {
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 22px;
+      color: aliceblue;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (min-width: 480px) {
+    .transicion {
+      width: 400px;
+      height: 422px;
+      margin-top: 35px;
+      animation-name: animacionmujer;
+      animation-duration: 1s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes animacionmujer {
+      0%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+  
+      10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translateX(-1px);
+        transform: translateX(-1px);
+      }
+  
+      20%, 40%, 60%, 80% {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+      }
+    }
+  
+    .transicion2 {
+      height: 392px;
+      width: 400px;
+      animation-name: animacionmanos;
+      animation-duration: 2s;
+      animation-delay: 0s;
+    }
+  
+    @keyframes animacionmanos {
+      100% {
+        opacity: 0;
+        -webkit-transform: translateX(-1200px);
+        transform: translateX(-1200px);
+      }
+  
+      0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+    }
+  
+    .bloqueuno {
+      height: 550px;
+    }
+  
+    .form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      margin-top: 0px;
+      height: 390px;
+    }
+  
+    .titulo, .titulotres {
+      font-size: 60px;
+    }
+  }
+
+  //seccion el proyecto//
+
+ .icono1{
+     padding-left: 100px;
+
+ }
+ .icono5{
+    padding-left: 50px;
+ }
 
 
+//pestaña login//
 
 .seccionlogin{
     background-image: url(../img/fondo12.jpg);
@@ -202,31 +746,3 @@
 
 //footer//
 
-.pie{
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   background-image: url(../img/psicoo.jpg);
-
-   @media (min-width: 480px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-   }
-
-    .pie__datos{
-        color: #BEEC3D;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-        }
