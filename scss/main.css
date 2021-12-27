@@ -48,10 +48,20 @@ h4 {
 }
 
 /*body*/
+.centrado {
+  text-align: center;
+}
+
+.footericonos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   display: -ms-grid;
   display: grid;
-  height: auto;
+  height: 100vh;
   /** posicionar areas**/
       grid-template-areas: "header" "bloqueuno" "bloquedos" "bloquetres" "footer";
 }
@@ -95,9 +105,19 @@ header {
   height: 1050px;
 }
 
+.btn-success {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bloqueseis {
   background-image: url(../img/fondoteam.jpg);
   height: auto;
+}
+
+.precios {
+  margin: 50px;
 }
 
 .chicaaudifonos {
@@ -204,14 +224,19 @@ footer {
 }
 
 /**header**/
-.cabeza {
-  display: -ms-grid;
-  display: grid;
-  height: auto;
+.nav-link {
+  color: white !important;
+  font-family: 'Monoton', cursive;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+header {
   background-image: url(../img/psicoo.jpg);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.nav-link.active {
+  color: chartreuse;
 }
 
 .cabeza__bloque {
@@ -222,7 +247,7 @@ footer {
           justify-content: center;
 }
 
-.logo {
+.navbar-brand {
   height: 110px;
   width: 110px;
   padding-top: 10px;
@@ -460,7 +485,11 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../img/psicoo.jpg);
+  background-image: url(../img/fondofooter.jpg);
+}
+
+.footericonos {
+  padding-top: 10px;
 }
 
 .logofooter {
@@ -582,22 +611,19 @@ p {
   }
   .box1 {
     width: 350px;
-    height: 300px;
-    border: solid 5px #BEEC3D;
+    height: auto;
     border-radius: 10px;
     margin: 10px;
   }
   .box2 {
     width: 350px;
-    height: 300px;
-    border: solid 5px #BEEC3D;
+    height: auto;
     border-radius: 10px;
     margin: 10px;
   }
   .box3 {
     width: 350px;
-    height: 300px;
-    border: solid 5px #BEEC3D;
+    height: auto;
     border-radius: 10px;
     margin: 10px;
   }
@@ -705,6 +731,14 @@ p {
   }
 }
 
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-toggler {
+  color: #BEEC3D;
+}
+
 @media (min-width: 480px) {
   .cabeza__bloque {
     display: -ms-grid;
@@ -714,6 +748,12 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  #navbarNavDropdown {
+    padding-left: 200px;
   }
   .cabeza__listas {
     display: -webkit-box;
@@ -741,6 +781,10 @@ p {
     margin-left: 20px;
     margin-bottom: 10px;
   }
+}
+
+.textopie {
+  text-decoration: none;
 }
 
 @media (min-width: 480px) {

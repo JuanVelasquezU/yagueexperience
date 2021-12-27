@@ -12,28 +12,32 @@
     <link rel="stylesheet" href="../scss/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="cabeza">
-    <div class="cabeza__bloque">
-        <a class="centrarlogo" href="../index.html">
-         <img class="logo" src="../img/logonuevo.svg" alt="Logotipo">
-        </a>        
-        <div class="cabeza__compra">
-            <button class="form__boton">Comprar Ticket</button>
-         </div>
+  <header class="navbar navbar-expand-sm navbar-light bg-light">
+
+    <div class="container">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logonuevo.svg" width="100px" height="100px" alt="experiencia"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item"><a class="nav-link" href="../index.html"> Home</a> </li> 
+                <li class="nav-item"><a class="nav-link" href="laexperiencia.html">La Experiencia</a> </li>
+                <li class="nav-item"><a class="nav-link" href="elproyecto.html">El proyecto</a></li>
+                <li class="nav-item"><a class="nav-link" href="nuestroequipo.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Ingresar</a></li>
+            </ul>
+        </div>
     </div>
-    
-    <nav class="cabeza__nav">
-         <ul class="cabeza__listas">
-            <li><a class="clasea" href="../index.html"> Home</a> </li> 
-            <li><a class="clasea" href="laexperiencia.html">La Experiencia</a> </li>
-            <li><a class="clasea" href="elproyecto.html">El proyecto</a></li>
-            <li><a class="clasea" href="nuestroequipo.html">Nuestro Equipo</a></li>
-            <li><a class="clasea" href="contacto.html">Contacto</a></li>
-            <li><a class="clasea" href="login.html">Ingresar</a></li>
-        </ul>
-   </nav>
 </header>
 <section class="bloquecinco">
 
@@ -63,23 +67,11 @@
               <ul class="listapasitos">
                 <li class="d-flex flex-wrap">
                   <div class="paso1">
-                    <h4>Lorem ipsum dolor sit</h4>
-                    <p>Lorem ipsum dolor sitLorem ipsum dolor sit</p>
+                    <h4>Recomendación Importante</h4>
+                    <p>La decisión de participar en una sesión siempre tiene que tomarla la persona misma, no puede proceder de un familiar o un amigo. Esta decisión se tiene que basar en una idea clara de los potenciales riesgos y beneficios con relación al historial médico, salud mental, y estado de ánimo general. La Experiencia "Yagué" se presenta a veces como una panacea para momentos de diversión, y en ocasiones puede parecer una salida fácil para evadir momentos personales complejos. Sin embargo, solamente es una herramienta que, en el caso de ser bien utilizada, puede actuar como una experiencia satisfactoria, entregandonos perspectivas mas amplias respecto a las potencialidades de nuestros sentidos. </p>
                   </div>
                 </li>
-                <li class="d-flex flex-wrap">
-                  <div class="paso2">
-                    <h4>Lorem ipsum dolor sit</h4>
-                    <p>Lorem ipsum dolor sit Lorem ipsum dolor sit</p>
-                  </div>
-                </li>
-                <li class="d-flex flex-wrap">
-                  <div class="paso3">
-                    <h4>Lorem ipsum dolor sit</h4>
-                    <p>Lorem ipsum dolor sit Lorem ipsum dolor sits</p>
-                  </div>
-                </li>
-             </ul>
+              </ul>
             </div>
 
 
@@ -101,7 +93,7 @@
 <section class="bloquedos">
 
   <div>
-       <h2 class="bloquedos__h2 titulo">La Experiencia</h2>
+       <h2 class="bloquedos__h2 titulo">Trailer</h2>
   </div>
 
   <div class="container">
@@ -114,28 +106,34 @@
 </section>
 
 <footer class="pie"> 
-        
-  <div class="pie__logo">
-       <img src="../img/logonuevo.svg" alt="Logo Yagé">
+  <div class="container">
+      <nav class="row">
 
-  </div>
+          <a href="../index.html" class="col-sm-4 text-reset text-uppercase d-flex justify-content-center">
+              <img src="../img/logonuevo.svg" alt="Logo Yagé" class="img-logo mr-2"></a>
 
-  <div class="pie__datos">
-    <address>
-       Valdivia, Chile<br>
-         Andres Bello 2787, Dpto 8888
-    </address>
-       <ul>
-            <li>Telefono: +5699999999</li>
-
-            <li>Email: hola@experienciayage.cl</li>
-
-        </ul>
-
-  </div>      
+          <ul class="col-12 col-sm-4">
 
 
+              <li class="font-weight-bold text-uppercase text-white centrado">Valdivia, Región de los Rios, Chile</li>
+              <li><a href="../pages/laexperiencia.html" class="text-white textopie nav-link centrado">La Experiencia</a></li>
+              <li><a href="../pages/elproyecto.html" class="text-white textopie nav-link centrado">El Proyecto</a></li>
+              <li><a href="../pages/contacto.html" class="text-white textopie nav-link centrado">Contacto</a></li>
+          </ul>
+
+          <ul class="col-12 col-sm-4">
+
+              <li class="font-weight-bold text-uppercase text-white centrado">Redes Sociales</li>
+              
+              <li class="centrado"><a href="https://www.facebook.com/" class="text-white textopie"><img class="footericonos" src="../img/iconoface.png"> Facebook</a></li>
+              <li class="centrado"><a href="https://www.instagram.com/?hl=es-la" class="text-white textopie"><img class="footericonos" src="../img/iconoinsta.png"> Instagram</a></li> 
+          
+          </ul>
+
+            
+      </nav>   
+  </div>        
 </footer>
-<script src="js/bootstrap.min.js"></script>    
+<script src="../js/bootstrap.min.js"></script>    
 </body>
 </html>
