@@ -126,7 +126,10 @@ $h3: map-get($titulos, h3);
   .btn-success{
     align-items: center;
   }
-  
+
+  .form-group{
+    padding:10px;
+  }
   .bloqueseis {
     background-image: url(../img/fondoteam.jpg);
     height: auto;
@@ -279,6 +282,9 @@ $h3: map-get($titulos, h3);
     &:hover {
       border: 1px solid #BEEC3D;
     }
+  }
+  .cubologin{
+    padding-top: 100px;
   }
   
   .centrarlogo {
@@ -505,6 +511,9 @@ $h3: map-get($titulos, h3);
     .titulito{
         font-size: $h1;
     };
+    .cubologin{
+      padding-top: 10px;
+    }
     
 
     //para extend//
@@ -750,6 +759,7 @@ $h3: map-get($titulos, h3);
 .seccionlogin{
     background-image: url(../img/fondo12.jpg);
     background-repeat: no-repeat;
+    height: 500px;
 
 
 
